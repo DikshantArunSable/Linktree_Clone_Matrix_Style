@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;700&display=swap');
+
+body{
+    font-size: 15pt;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #000100;
+}
+*{
+    font-family: 'Source Code Pro', sans-serif;
+    transition: .3s all;
+    scroll-behavior: smooth
+}
+i{
+  font-size: 2.5rem
+}
+.mainimg{
+  width: auto;height: auto;
+  margin: auto;
+  
+}
+section{
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: #92d792;
+  background-color: #000100;
+  width: 100vw;
+  height: 100vh
+}
+.bt{
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  width: 80%; height: 60px;
+  font-size: 2.5rem;
+  margin:8%;
+  color: #92d792;
+  background-color: #000100;
+  border: 2px solid #92d792;
+  box-shadow: 5px 5px #92d792;
+  
+}
+.About{
+  margin-top: 30%;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+width: 100vw;
+align-items: center;
+justify-content: center;
+}
+.box{
+  width: 100%;
+  padding:30% 20%;
+  border: 1px solid #92d792;
+  animation: box 1s alternate infinite
+}
+@keyframes box{
+  from{box-shadow: 8px 8px 8px #92d792}
+  to{box-shadow: none}
+}
+a{text-decoration: none;color: #92d792;}
+
+.div1,.div2,.div3,.div4{
+  position: relative;
+  margin: 20% 25%
+}
+
+.div1 { grid-area: 1 / 1 / 3 / 2; }
+.div2 { grid-area: 2 / 2 / 4 / 3;animation-delay: .9s }
+.div3 { grid-area: 3 / 1 / 5 / 2; animation-delay: 1.4s}
+.div4 { grid-area: 4 / 2 / 6 / 3; animation-delay: 1.8s}
+
+
+footer{
+  color: #92d792;
+  position: relative;
+  text-align: center
+}
